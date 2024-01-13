@@ -1,0 +1,89 @@
+[gd_scene load_steps=14 format=3 uid="uid://rh7gxcox4irk"]
+
+[ext_resource type="Texture2D" uid="uid://yi5dkbnlo3q2" path="res://Individual Sprites/adventurer-idle-00.png" id="5_bf7di"]
+[ext_resource type="Texture2D" uid="uid://bgyhgfalamyci" path="res://Individual Sprites/adventurer-idle-01.png" id="6_bdayk"]
+[ext_resource type="Texture2D" uid="uid://jsy68plf1pck" path="res://Individual Sprites/adventurer-idle-02.png" id="7_t08al"]
+[ext_resource type="Texture2D" uid="uid://co1k807she86h" path="res://Individual Sprites/adventurer-idle-03.png" id="8_jrh2j"]
+[ext_resource type="Texture2D" uid="uid://cspfkyaprcyiw" path="res://Individual Sprites/adventurer-run-00.png" id="9_yr2ux"]
+[ext_resource type="Texture2D" uid="uid://qi87l1dinvds" path="res://Individual Sprites/adventurer-run-01.png" id="10_yxble"]
+[ext_resource type="Texture2D" uid="uid://77wv36q43j0c" path="res://Individual Sprites/adventurer-crnr-clmb-01.png" id="11_dcwvt"]
+[ext_resource type="Texture2D" uid="uid://bb7h7r6s4uphi" path="res://Individual Sprites/adventurer-run-02.png" id="11_elon0"]
+[ext_resource type="Texture2D" uid="uid://bvyc6im2kipq7" path="res://Individual Sprites/adventurer-run-03.png" id="12_shjtq"]
+[ext_resource type="Texture2D" uid="uid://dv2efi15jh06p" path="res://Individual Sprites/adventurer-run-04.png" id="13_qkyjn"]
+[ext_resource type="Texture2D" uid="uid://cy205n2ps0j8v" path="res://Individual Sprites/adventurer-run-05.png" id="14_g78mh"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_a8ix1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_yr2ux")
+}],
+"loop": true,
+"name": &"Jump",
+"speed": 1.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_bf7di")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_bdayk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_t08al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_jrh2j")
+}],
+"loop": true,
+"name": &"default",
+"speed": 6.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("9_yr2ux")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_yxble")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_elon0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_shjtq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_qkyjn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_g78mh")
+}],
+"loop": true,
+"name": &"running",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_dcwvt")
+}],
+"loop": true,
+"name": &"wall_slide",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_t5dr8"]
+radius = 12.0
+height = 48.0
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1.13687e-13, 0)
+scale = Vector2(1.46, 1.36486)
+sprite_frames = SubResource("SpriteFrames_a8ix1")
+animation = &"wall_slide"
+autoplay = "default"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_t5dr8")

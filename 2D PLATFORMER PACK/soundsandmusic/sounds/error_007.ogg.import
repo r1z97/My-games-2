@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://tj7vptaut1hs"
+path="res://.godot/imported/error_007.ogg-7837a7091a6168fb2b3bf476290e6adb.oggvorbisstr"
+
+[deps]
+
+source_file="res://2D PLATFORMER PACK/soundsandmusic/sounds/error_007.ogg"
+dest_files=["res://.godot/imported/error_007.ogg-7837a7091a6168fb2b3bf476290e6adb.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://0lcwc2lvo28w"
+path="res://.godot/imported/jingles_PIZZA07.ogg-a063a6dc4d2567b664b69142e5f885c4.oggvorbisstr"
+
+[deps]
+
+source_file="res://2D PLATFORMER PACK/soundsandmusic/sounds/jingles_PIZZA07.ogg"
+dest_files=["res://.godot/imported/jingles_PIZZA07.ogg-a063a6dc4d2567b664b69142e5f885c4.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

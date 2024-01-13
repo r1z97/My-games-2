@@ -1,0 +1,19 @@
+[remap]
+
+importer="oggvorbisstr"
+type="AudioStreamOggVorbis"
+uid="uid://ch1rxts6ra74y"
+path="res://.godot/imported/confirmation_001.ogg-966131f866da318d117e0428a2a9c5e8.oggvorbisstr"
+
+[deps]
+
+source_file="res://2D PLATFORMER PACK/soundsandmusic/sounds/confirmation_001.ogg"
+dest_files=["res://.godot/imported/confirmation_001.ogg-966131f866da318d117e0428a2a9c5e8.oggvorbisstr"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
